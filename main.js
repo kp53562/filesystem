@@ -5,8 +5,10 @@ function open(){
   file.innerText = "file"+String(filenumber);
   filenumber++;
   file.setAttribute("onclick","open()");
+  document.body.appendChild(file);
 }
 
 const rootdir = document.createElement("button");
 rootdir.innerText = ":::filesystem:::"
 rootdir.setAttribute("onclick","open()");
+document.body.appendChild(rootdir);
