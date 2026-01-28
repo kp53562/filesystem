@@ -6,6 +6,7 @@ function opendir(){
   file.innerText = "file"+String(filenumber);
   filenumber+=1;
   file.setAttribute("onclick","opendir()");
+  file.setAttribute("style","margin-left: "+String(15*(filenumber+1))+"px;")
   document.body.appendChild(file);
 }
 
