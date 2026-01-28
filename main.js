@@ -3,7 +3,7 @@ var filenumber = 0
 function open(){
   var file = document.createElement("button");
   file.innerText = "file"+String(filenumber);
-  filenumber++;
+  filenumber+=1;
   file.setAttribute("onclick","open()");
   document.body.appendChild(file);
 }
