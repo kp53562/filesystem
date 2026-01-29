@@ -61,9 +61,8 @@ function getObjwId(id){
         if (val.getRight() != id){
           if (val.getLeft() instanceof Map) {
             const rval = searchDirs(val.getLeft(),id);
-            if (rval != THE_FORBIDDEN_STRING) {
+            if (rval != THE_FORBIDDEN_STRING)
               return rval; 
-            }
           }
         }
       }
@@ -73,8 +72,8 @@ function getObjwId(id){
 }
 function hideObjsWithinDir(id){
   var objection = getObjwId(id);
-  if ((objection != null){
-    if (objection instanceof Pair)) {
+  if (objection != null){
+    if (objection instanceof Pair) {
       if (!(objection.getLeft() instanceof Map))
         return 0;
       document.getElementById(id).setAttribute("opened","closed");
@@ -98,8 +97,8 @@ var dirnumber = 0;
 const indentpos = 15;
 function showObjsWithinDir(id){
   var objection = getObjwId(id);
-  if ((objection != null) {
-    if (objection instanceof Pair)) {
+  if (objection != null) {
+    if (objection instanceof Pair) {
       if (objection.getLeft() instanceof Map) {
         document.getElementById(id).setAttribute("opened","opened");
         var x = 0;
@@ -164,3 +163,5 @@ document.body.appendChild(rootdir);
 newfile.innerText = ": + :"
 newfile.setAttribute("onclick","newfile(-1)");
 document.body.appendChild(newfile);
+
+
