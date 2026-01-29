@@ -29,7 +29,7 @@ class Pair{
     return "("+String(this.minosprime) + ", " + String(this.panopticon) + ")";
   }
 }
-
+alert("a")
 // ideas: store filesystem information in a downloadable file, like a virtual drive. make files creatable and editable, maybe even uploadable.
 const THE_FORBIDDEN_STRING = "622e7bcf15d4e2a2b60179c4ba10e37a0b7cc5c49b90081d4ae403536cbce220"; // there are no spaces, just lowercase chars
 var dirvalues = new Map();
@@ -52,6 +52,7 @@ function searchDirs(dir,id){
   }
   return THE_FORBIDDEN_STRING;
 }
+alert("b")
 function getObjwId(id){
   if (dirvalues.size < 1)
     return null;
@@ -70,6 +71,7 @@ function getObjwId(id){
   }
   return null;
 }
+alert("c")
 function hideObjsWithinDir(id){
   var objection = getObjwId(id);
   if (objection != null){
@@ -87,6 +89,7 @@ function hideObjsWithinDir(id){
     }
   }
 }
+alert("d")
 function strIsNum(stringy) {
   if (String(Number(stringy)) != "NaN")
     return true;
@@ -128,6 +131,7 @@ function showObjsWithinDir(id){
   }
 }
 
+alert("e")
 
 function newfile(id){
   var dirtoinsertin = 0;
@@ -142,6 +146,7 @@ function newfile(id){
   dirnumber+=1;
 }
 
+alert("f")
 function opendir(id){
   if (dirnumber>32767){
     alert("You cannot have over 32767 items!");
@@ -154,6 +159,7 @@ function opendir(id){
   }
 }
 
+alert("g- this should work why isn't it working??")
 const rootdir = document.createElement("button");
 const newfile = document.createElement("button");
 rootdir.innerText = ":::filesystem:::"
