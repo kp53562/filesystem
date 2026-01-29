@@ -2,7 +2,7 @@
 //
 //  MAIN.JS
 //
-
+alert("0");
 class Pair{
   constructor(p1, p2){
     this.minosprime = p1;
