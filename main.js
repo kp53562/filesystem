@@ -139,9 +139,9 @@ function newfile(id){
   if (id != -1) 
     dirtoinsertin = getObjwId(id);
   if (dirtoinsertin == 0)
-    dirvalues["File " + String(dirnumber)]     = new Pair("",dirnumber);
+    dirvalues.set("File " + String(dirnumber), new Pair("",dirnumber));
   else
-    dirtoinsertin["File " + String(dirnumber)] = new Pair("",dirnumber);
+    dirtoinsertin.set("File " + String(dirnumber), new Pair("",dirnumber));
   alert("a")
   hideObjsWithinDir(id);
   showObjsWithinDir(id);
