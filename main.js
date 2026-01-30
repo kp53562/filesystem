@@ -122,7 +122,7 @@ function showObjsWithinDir(id){
                 content.innerText = objection.getLeft().keys()[x];
                 content.setAttribute("style","margin-left: "+String(indentpos)+"px;");
                 if (elem.getLeft() instanceof Map)
-                  file.setAttribute("onclick","opendir("+String(dirnumber)+")");
+                  content.setAttribute("onclick","opendir("+String(elem.getRight())+")");
                 document.body.appendChild(content);
               }
             x=+1;
