@@ -52,6 +52,8 @@ function searchDirs(dir,id){
 }
 
 function getObjwId(id){
+  alert(String(dirvalues.size))
+  alert(String(dirvalues.keys()))
   if (dirvalues.size < 1)
     return null;
   else{
