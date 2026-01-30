@@ -170,7 +170,7 @@ const rootdir = document.createElement("button");
 const newfileb = document.createElement("button");
 rootdir.innerText = ":::filesystem:::"
 rootdir.setAttribute("onclick","opendir(-1)");
-rootdir.setAttribute("id","-1");
+rootdir.setAttribute("id",-1);
 document.body.appendChild(rootdir);
 newfileb.innerText = ": + :"
 newfileb.setAttribute("onclick","newfile(-1)");
