@@ -158,13 +158,13 @@ function opendir(id){
 }
 
 const rootdir = document.createElement("button");
-const newfile = document.createElement("button");
+const newfileb = document.createElement("button");
 rootdir.innerText = ":::filesystem:::"
 rootdir.setAttribute("onclick","opendir(-1)");
 rootdir.setAttribute("id","-1");
 document.body.appendChild(rootdir);
-newfile.innerText = ": + :"
-newfile.setAttribute("onclick","newfile(-1)");
-document.body.appendChild(newfile);
+newfileb.innerText = ": + :"
+newfileb.setAttribute("onclick","newfile(-1)");
+document.body.appendChild(newfileb);
 
 
