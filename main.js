@@ -138,9 +138,10 @@ function newfile(id){
   var dirtoinsertin = 0;
   if (id != -1) 
     dirtoinsertin = getObjwId(id);
-  if (dirtoinsertin == 0)
+  if (dirtoinsertin == 0) {
     dirvalues.set("File " + String(dirnumber), new Pair(" ",dirnumber));
     alert("this is a test");
+  }
   else
     dirtoinsertin.set("File " + String(dirnumber), new Pair(" ",dirnumber));
   alert("a")
