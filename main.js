@@ -132,6 +132,7 @@ function showObjsWithinDir(id){
 
 
 function newfile(id){
+  alert(String(id));
   var dirtoinsertin = 0;
   if (id != -1) 
     dirtoinsertin = getObjwId(id);
