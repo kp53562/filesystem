@@ -79,6 +79,7 @@ function hideObjsWithinDir(id){
       document.getElementById(id).setAttribute("opened","closed");
       for (const elem of objection.getLeft().values()) {
         if (elem instanceof Pair) {
+          alert(String(elem.getRight));
           if (elem.getLeft() instanceof Map)
             hideObjsWithinDir(elem.getRight());
           document.getElementById(elem.getRight()).remove();
@@ -132,7 +133,6 @@ function showObjsWithinDir(id){
 
 
 function newfile(id){
-  alert(String(id));
   var dirtoinsertin = 0;
   if (id != -1) 
     dirtoinsertin = getObjwId(id);
@@ -140,8 +140,10 @@ function newfile(id){
     dirvalues["File " + String(dirnumber)]     = new Pair("",dirnumber);
   else
     dirtoinsertin["File " + String(dirnumber)] = new Pair("",dirnumber);
+  alert("a")
   hideObjsWithinDir(id);
   showObjsWithinDir(id);
+  alert("b")
   dirnumber+=1;
 }
 
