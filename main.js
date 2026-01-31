@@ -114,6 +114,7 @@ function showObjsWithinDir(id){
                 while (!strIsNum(Anarchic[0])) {
                   if (Anarchic.length < 1)
                     break;
+                  Anarchic = Anarchic.slice(1);
                 }
                 if (strIsNum(String(parseInt(Anarchic))))
                     indentpos = parseInt(Anarchic)+15;
@@ -171,6 +172,7 @@ const newfileb = document.createElement("button");
 rootdir.innerText = ":::filesystem:::"
 rootdir.setAttribute("onclick","opendir(-1)");
 rootdir.setAttribute("id",-1);
+rootdir.setAttribute("style","margin-left: 0px;");
 document.body.appendChild(rootdir);
 newfileb.innerText = ": + :"
 newfileb.setAttribute("onclick","newfile(-1)");
