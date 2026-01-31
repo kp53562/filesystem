@@ -101,7 +101,7 @@ function showObjsWithinDir(id){
   var objection = getObjwId(id);
   if (objection == -1)
     objection = new Pair(dirvalues,-1);
-  alert(objection);
+  alert("objection: "+objection.toString());
   if (objection != null) {
     if (objection instanceof Pair) {
       if (objection.getLeft() instanceof Map) {
